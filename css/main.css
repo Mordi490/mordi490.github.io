@@ -1,0 +1,97 @@
+/*
+palette from generator 1
+#9E9E96
+#B0B1A8
+#421D2B
+#A8A8A1
+#A2A39B
+
+palette from generator 2
+#5e4954
+#9ca49c
+#949690
+#9c9c98
+#2c2c44
+*/
+@font-face {
+    font-family: "Overpass";
+    src: url("/static/fonts/ttf/Overpass-Regular.ttf"),
+    url("/static/fonts/ttf/Overpass-Black.ttf"),
+    url("/static/fonts/ttf/Overpass-LightItalic.ttf");
+}
+
+body {
+    text-align: center;
+    background-color: #002b36;
+    color: #657b83;
+    background-image: url("./static/img/KfPLk9E.jpg");
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+h2 {
+    text-emphasis: Bold;
+}
+
+h4 {
+    color: #93a1a1;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1rem;
+    text-align: start;
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+a {
+	text-decoration: none;
+    color: #949690;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+}
+
+img {
+    margin: 0.5rem;
+}
+
+.category {
+    background-color: #073642;
+}
+
+@media (min-width: 920px) {
+    nav {
+        grid-area: auto;
+        margin: 0 20%;
+    }
+}
+
+#Communication {
+}
+
+#WorkProductivity {
+}
+
+#Recreational {
+}
