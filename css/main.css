@@ -21,6 +21,11 @@ palette from generator 2
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: #002b36;
     color: #657b83;
@@ -29,6 +34,10 @@ body {
 
 h2, h3, h4 {
     text-align: center;
+}
+
+p {
+    display: none;
 }
 
 h2 {
@@ -47,6 +56,7 @@ nav {
 }
 
 ul {
+
     list-style-type: none;
     margin: 1em;
     text-align: start;
@@ -59,8 +69,13 @@ li {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     max-width: 15em;
+}
+
+li h4 {
+    align-self: center;
+    font-size: larger;
 }
 
 a {
@@ -68,8 +83,8 @@ a {
     color: #949690;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 0.1rem;
 }
 
@@ -88,9 +103,14 @@ img {
     gap: 1em;
     **/
     nav {
-        grid-area: auto;
-        margin: 0 20%;
-        position: relative;
+        width: 67%;
+        max-width: 1000px;
+    }
+
+    p {
+        display: block;
+        text-transform: capitalize;
+        color: #839496;
     }
 }
 
