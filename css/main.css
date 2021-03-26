@@ -107,8 +107,9 @@ img {
         max-width: 1000px;
     }
 
-    p {
-        display: block;
+    li p {
+        display: flex;
+        margin: auto 0.8em auto auto;
         text-transform: capitalize;
         color: #839496;
     }
