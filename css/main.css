@@ -107,9 +107,11 @@ img {
         max-width: 1000px;
     }
 
-    li p {
+    a p {
         display: flex;
-        margin: auto 0.8em auto auto;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
         text-transform: capitalize;
         color: #839496;
     }
