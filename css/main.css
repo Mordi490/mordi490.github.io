@@ -32,6 +32,10 @@ body {
     background-image: url("./static/img/KfPLk9E.jpg");
 }
 
+h2 {
+    font-family: 'Architects Daughter', cursive;
+}
+
 h2, h3, h4 {
     text-align: center;
 }
