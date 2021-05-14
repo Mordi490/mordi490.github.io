@@ -14,60 +14,114 @@ palette from generator 2
 #2c2c44
 */
 @font-face {
-    font-family: "Overpass";
-    src: url("/static/fonts/ttf/Overpass-Regular.ttf"),
+  font-family: "Overpass";
+  src: url("/static/fonts/ttf/Overpass-Regular.ttf"),
     url("/static/fonts/ttf/Overpass-Black.ttf"),
     url("/static/fonts/ttf/Overpass-LightItalic.ttf");
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #002b36;
-    color: #657b83;
-    background-image: url("./static/img/KfPLk9E.jpg");
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #002b36;
+  color: #657b83;
+  background-image: url("./static/img/KfPLk9E.jpg");
 }
 
 h2 {
-    font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
 }
 
-h2, h3, h4 {
-    text-align: center;
+h2,
+h3,
+h4 {
+  text-align: center;
 }
 
 p {
-    display: none;
+  display: none;
 }
 
 h2 {
-    text-emphasis: Bold;
+  text-emphasis: Bold;
 }
 
 h4 {
-    color: #93a1a1;
+  color: #93a1a1;
 }
 
 nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  width: fit-content;
 }
 
 ul {
-
-    list-style-type: none;
-    margin: 1em;
-    text-align: start;
-    padding-inline-start: 0;
+  list-style-type: none;
+  margin: 1em;
+  text-align: start;
+  padding-inline-start: 0;
 }
 
 li {
+  list-style-type: none;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 15em;
+}
+
+li h4 {
+  align-self: flex-start;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+  color: #949690;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.1rem;
+}
+
+img {
+  margin: 0.5rem;
+}
+
+.category {
+  background-color: #073642;
+}
+
+@media (min-width: 920px) {
+  /** defualt has the following:
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    **/
+  nav {
+    width: 67%;
+    max-width: 1000px;
+  }
+
+  a p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-transform: capitalize;
+    color: #839496;
+  }
+
+  li {
     list-style-type: none;
     padding: 1em;
     display: flex;
@@ -75,50 +129,7 @@ li {
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 15em;
-}
-
-li h4 {
-    align-self: center;
-    font-size: larger;
-}
-
-a {
-	text-decoration: none;
-    color: #949690;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0.1rem;
-}
-
-img {
-    margin: 0.5rem;
-}
-
-.category {
-    background-color: #073642;
-}
-
-@media (min-width: 920px) {
-    /** defualt has the following:
-        display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    **/
-    nav {
-        width: 67%;
-        max-width: 1000px;
-    }
-
-    a p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-        text-transform: capitalize;
-        color: #839496;
-    }
+  }
 }
 
 #Communication {
