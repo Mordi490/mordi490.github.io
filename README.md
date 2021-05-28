@@ -22,4 +22,4 @@ We'd like to directly mention (in alphabetical order) for their continued commun
  - 
 
 ## Privacy Statement
-mordi490.github.io tracks no user data, so you can feel 120% safe on our website, whether you are at land or sea 🧜‍♂️
+mordi490.github.io tracks no user data, so you can feel 120% safe on our website, whether you are at land or shore 🧜‍♂️
