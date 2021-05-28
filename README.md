@@ -19,7 +19,7 @@ Our prioritized roadmap of features and utilities that the core team is focusing
 
 We'd like to directly mention (in alphabetical order) for their continued community support this month and helping directly make mordi490.github.io a better piece of software. 💃
 
- - 
+ - [0us](https://github.com/0us)
 
 ## Privacy Statement
 mordi490.github.io tracks no user data, so you can feel 120% safe on our website, whether you are at land or shore 🧜‍♂️
