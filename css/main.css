@@ -1,3 +1,6 @@
+@import "./components/_dashboard.css";
+@import "./components/_navbar.css";
+
 /*
 palette from generator 1
 #9E9E96
@@ -54,13 +57,6 @@ h4 {
   color: #93a1a1;
 }
 
-nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  width: fit-content;
-}
-
 ul {
   list-style-type: none;
   margin: 1em;
@@ -108,10 +104,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
     **/
-  nav {
-    width: 67%;
-    max-width: 1000px;
-  }
 
   a p {
     display: flex;

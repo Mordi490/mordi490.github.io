@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.category {
+  min-width: 20rem;
+  margin: 1rem;
+}
+
+.category h4 {
+  width: 100%;
+  text-align: center;
+}

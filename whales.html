@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="css/main.css" />
+<div id="video-container">
+    <script>
+        const container = document.getElementById("video-container")
+        
+        const addVideo = async () => {
+            container.innerHTML += '<iframe width="560" height="315" src="https://www.youtube.com/embed/EvtMTV9mMSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        }
+
+        for (let i = 0; i < 25; i++) {
+            addVideo();
+        }
+
+    </script>
+</div>
