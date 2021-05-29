@@ -25,7 +25,7 @@ a > img {
 }
 
 body {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: 'Inconsolata', monospace;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
