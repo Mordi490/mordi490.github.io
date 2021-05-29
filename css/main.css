@@ -13,6 +13,8 @@ palette from generator 2
 #9c9c98
 #2c2c44
 */
+@import "components/bugfix.css";
+
 @font-face {
   font-family: "Overpass";
   src: url("/static/fonts/ttf/Overpass-Regular.ttf"),
