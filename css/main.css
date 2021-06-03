@@ -20,7 +20,12 @@ palette from generator 2
     url("/static/fonts/ttf/Overpass-LightItalic.ttf");
 }
 
+a > img {
+  margin-left: 1rem;
+}
+
 body {
+  font-family: 'Inconsolata', monospace;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -40,6 +45,8 @@ h2,
 h3,
 h4 {
   text-align: center;
+  color: #93a1a1;
+  user-select: none;
 }
 
 p {
@@ -50,10 +57,6 @@ h2 {
   text-emphasis: Bold;
 }
 
-h4 {
-  color: #93a1a1;
-}
-
 nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -61,32 +64,9 @@ nav {
   width: fit-content;
 }
 
-ul {
-  list-style-type: none;
-  margin: 1em;
-  text-align: start;
-  padding-inline-start: 0;
-}
-
-li {
-  list-style-type: none;
-  padding: 1em;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 15em;
-}
-
-li h4 {
-  justify-content: center;
-  align-self: flex-start;
-  font-size: larger;
-}
-
 a {
   text-decoration: none;
-  color: #949690;
+  color: #dee3e3;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -99,7 +79,56 @@ img {
 }
 
 .category {
+  display: flex;
   background-color: #073642;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.category > h4 {
+  min-width: 100%;
+  flex-flow: column;
+  font-weight: 300;
+}
+
+.category > ul {
+  max-width: 95%;
+  padding-inline-start: 0;
+  align-content: center;
+}
+
+li.category {
+  list-style-type: none;
+  padding: 1em;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 15em;
+}
+
+.category * {
+  display: flex;
+}
+
+.category > ul {
+  width: 100%;
+  flex-direction: column;
+  align-self: center;
+}
+
+.category > ul > li {
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+}
+
+.category > ul > li:hover {
+  border-radius: 4px;
+  background-color: #052d38
+}
+
+.category > ul > li > a > img {
+  margin-right: 1rem;
 }
 
 @media (min-width: 920px) {
@@ -119,17 +148,7 @@ img {
     justify-content: center;
     align-self: center;
     text-transform: capitalize;
-    color: #839496;
-  }
-
-  li {
-    list-style-type: none;
-    padding: 1em;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 15em;
+    color: #dee3e3;
   }
 }
 
