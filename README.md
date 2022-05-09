@@ -1,3 +1,5 @@
+Silly project for shits & giggles
+
 ## Greeting
 Your one stop shop for all your daily needs 😎
 
